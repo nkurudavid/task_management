@@ -1,0 +1,88 @@
+# Backend (FastAPI + PostgreSQL)
+### Features:
+
+JWT authentication with HTTP-only cookies
+Role-based access control (Admin, Lecturer, Student)
+PostgreSQL database with SQLAlchemy ORM
+RESTful API endpoints for users, tasks, and authentication
+Password hashing with bcrypt
+Automatic admin user creation (username: admin, password: admin123)
+
+### User Roles:
+
+- Admin: Full system access
+- Lecturer: Can create tasks, manage students, view all tasks they created
+- Student: Can view assigned tasks, see colleagues
+
+## Frontend (React + Tailwind)
+Color Scheme: Black, Orange, White, and Sky Blue
+
+Pages:
+
+Login Page: Clean authentication interface
+Dashboard: Statistics cards showing task counts
+Profile: Update email/name and change password
+
+Tasks:
+Lecturers: Create, edit, delete, assign tasks to students
+Students: View assigned tasks
+
+
+Students/Colleagues:
+Lecturers: Add and manage students
+Students: View fellow students
+
+
+
+## Setup Instructions:
+
+
+## FOR BACKEND SETUP
+
+cd task_api
+
+### Install Python dependencies
+`pipenv install fastapi uvicorn sqlalchemy psycopg2-binary python-jose[cryptography] passlib[bcrypt] python-multipart`
+
+`pipenv shell` to activate the virtual environment
+
+## To create Lecturer User
+`python app.create_lecturer`
+
+### Run backend server
+`python app.main`
+
+Server runs on http://localhost:8000
+
+
+
+
+## FOR THE FRONTEND SETUP
+
+### Create React app
+`npx create-react-app task_client`
+
+cd task_client
+
+## Install Tailwind CSS
+
+`npm install -D tailwindcss@3`
+`npx tailwindcss init`
+
+
+## Install dependencies
+`npm install lucide-react`
+
+
+## Update API_URL in the code if needed
+## const API_URL = 'http://localhost:8000/api';
+
+## Run frontend
+Run your build process with `npm run start` or `serve -s build`
+
+## Frontend runs on http://localhost:3000
+
+
+## Database:
+## sql-- Create PostgreSQL database
+`CREATE DATABASE taskmanagement;`
