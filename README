@@ -74,6 +74,17 @@ cd task_client
 `npm install lucide-react`
 
 
+<hr/>
+
+## GET FRONTEND READY
+
+
+cd task_client
+
+Run `npm install`
+
+
+
 ## Update API_URL in the code if needed
 ## const API_URL = 'http://localhost:8000/api';
 
