@@ -37,6 +37,10 @@ Students: View fellow students
 ## Setup Instructions:
 
 
+## DATABASE:
+### sql-- Create PostgreSQL database
+`CREATE DATABASE taskmanagement;`
+
 ## FOR BACKEND SETUP
 
 cd task_api
@@ -53,9 +57,13 @@ cd task_api
 `python app.main`
 
 Server runs on http://localhost:8000
+API_URL = 'http://localhost:8000/api'
 
+Swagger_UI in browser: 'http://localhost:8000/docs#/'
 
+<img width="1380" height="880" alt="Image" src="https://github.com/user-attachments/assets/add4b0bd-0466-44fe-8b80-f69eb51572ab" />
 
+<br/>
 
 ## FOR THE FRONTEND SETUP
 
@@ -64,13 +72,13 @@ Server runs on http://localhost:8000
 
 cd task_client
 
-## Install Tailwind CSS
+### Install Tailwind CSS
 
 `npm install -D tailwindcss@3`
 `npx tailwindcss init`
 
 
-## Install dependencies
+### Install dependencies
 `npm install lucide-react`
 
 
@@ -84,16 +92,10 @@ cd task_client
 Run `npm install`
 
 
-
-## Update API_URL in the code if needed
-## const API_URL = 'http://localhost:8000/api';
-
-## Run frontend
+### Run frontend
 Run your build process with `npm run start` or `serve -s build`
 
-## Frontend runs on http://localhost:3000
+Frontend runs on 'http://localhost:3000'
 
-
-## Database:
-## sql-- Create PostgreSQL database
-`CREATE DATABASE taskmanagement;`
+<img width="1424" height="905" alt="Image" src="https://github.com/user-attachments/assets/f4352c0d-b04b-4dd2-8c04-ead95f2f0e02" />
+<img width="1919" height="912" alt="Image" src="https://github.com/user-attachments/assets/9fcb1622-87c5-4ce3-a51d-bc005a45a977" />
